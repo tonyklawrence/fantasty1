@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @venue.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @venue.location %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @venue.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>

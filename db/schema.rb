@@ -9,16 +9,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090525131657) do
+ActiveRecord::Schema.define(:version => 20090525143025) do
 
   create_table "drivers", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "team_id"
   end
 
   create_table "teams", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "venues", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
