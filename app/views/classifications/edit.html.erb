@@ -4,16 +4,21 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :venue_id %><br />
-    <%= f.text_field :venue_id %>
+	<%=
+	  @venues = Venue.find(:all, :order => "name")
+	  collection_select("classification", "venue_id", @venues, :id, :name )
+	%>
   </p>
   <p>
-    <%= f.label :driver_id %><br />
-    <%= f.text_field :driver_id %>
+	<%=
+	  @drivers = Driver.find(:all, :order => "name")
+	  collection_select("classification", "driver_id", @drivers, :id, :name )
+	%>
   </p>
   <p>
     <%= f.label :time %><br />
-    <%= f.datetime_select :time %>
+    <%= f.time_select :time, :include_seconds => true %>
+    <%= f.text_field :time_ms %>
   </p>
   <p>
     <%= f.submit 'Update' %>

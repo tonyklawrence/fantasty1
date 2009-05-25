@@ -14,13 +14,25 @@
 </p>
 
 <b>Results:</b>
+<table>
+  <tr>
+	<th>Position</th>
+    <th>Name</th>
+    <th>Team</th>
+    <th>Race Time</th>
+    <th>Points</th>
+  </tr>
+
 <% @venue.classifications.each do |c| %>
-  <p>
-  <%=h c.driver.name %>
-  <%=h c.driver.team.name %>
-  <%=h c.time.to_formatted_s(:time_with_ms) %>.<%=h c.time_ms %>
-  </p>
+  <tr>
+	<td>-</td>
+    <td><%=h c.driver.name %></td>
+    <td><%=h c.driver.team.name %></td>
+    <td><%=h c.time.to_formatted_s(:time_with_ms) %>.<%=h c.time_ms %></td>
+	<td>-</td>
+  </tr>
 <% end %>
+</table>
 
 <%= link_to 'Edit', edit_venue_path(@venue) %> |
 <%= link_to 'Back', venues_path %>

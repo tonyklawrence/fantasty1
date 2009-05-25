@@ -1,16 +1,16 @@
 <p>
   <b>Venue:</b>
-  <%=h @classification.venue_id %>
+  <%=h @classification.venue.name %>
 </p>
 
 <p>
   <b>Driver:</b>
-  <%=h @classification.driver_id %>
+  <%=h @classification.driver.name %>
 </p>
 
 <p>
   <b>Time:</b>
-  <%=h @classification.time.to_formatted_s(:time_with_ms) %>.<%=h classification.time_ms %>
+  <%=h @classification.time.to_formatted_s(:time_with_ms) %>.<%=h @classification.time_ms %>
 </p>
 
 
