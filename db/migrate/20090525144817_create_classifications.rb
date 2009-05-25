@@ -4,6 +4,7 @@ class CreateClassifications < ActiveRecord::Migration
       t.integer :venue_id
       t.integer :driver_id
       t.time :time
+      t.integer :time_ms
 
       t.timestamps
     end

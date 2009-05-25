@@ -2105,3 +2105,133 @@ Migrating to AddMissingMsToClassifications (20090525145858)
   [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
   [4;35;1mSQL (1.8ms)[0m   [0mdescribe `venues`[0m
   [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTeams (20090525131339)
+Migrating to CreateDrivers (20090525131657)
+Migrating to AddTeamToDrivers (20090525135949)
+Migrating to CreateVenues (20090525143025)
+Migrating to CreateClassifications (20090525144817)
+Migrating to AddMissingMsToClassifications (20090525145858)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `classifications`[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mdescribe `classifications`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `classifications`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `teams`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `teams`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `teams`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTeams (20090525131339)
+Migrating to CreateDrivers (20090525131657)
+Migrating to AddTeamToDrivers (20090525135949)
+Migrating to CreateVenues (20090525143025)
+Migrating to CreateClassifications (20090525144817)
+Migrating to AddMissingMsToClassifications (20090525145858)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `classifications`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `classifications`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `classifications`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `teams`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `teams`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `teams`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddMissingMsToClassifications (20090525145858)
+  [4;36;1mSQL (91.1ms)[0m   [0;1mALTER TABLE `classifications` DROP `time_ms`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090525145858'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `classifications`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `classifications`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `classifications`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `teams`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `teams`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `teams`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClassifications (20090525144817)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mDROP TABLE `classifications`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090525144817'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `drivers`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `drivers`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `drivers`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `teams`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `teams`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `teams`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `venues`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `venues`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `venues`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTeams (20090525131339)
+Migrating to CreateDrivers (20090525131657)
+Migrating to AddTeamToDrivers (20090525135949)
+Migrating to CreateVenues (20090525143025)
+Migrating to CreateClassifications (20090525144817)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTeams (20090525131339)
+Migrating to CreateDrivers (20090525131657)
+Migrating to AddTeamToDrivers (20090525135949)
+Migrating to CreateVenues (20090525143025)
+Migrating to CreateClassifications (20090525144817)
+  [4;36;1mSQL (95.0ms)[0m   [0;1mCREATE TABLE `classifications` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `venue_id` int(11), `driver_id` int(11), `time` time, `time_ms` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090525144817')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `classifications`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `classifications`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `classifications`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `drivers`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `drivers`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `drivers`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `teams`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `teams`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `teams`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `venues`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `venues`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `venues`[0m
