@@ -1,6 +1,6 @@
 class AddDriversToTeam < ActiveRecord::Migration
   def self.up
-    add_column :drivers, :team_id, :int
+    add_column :drivers, :team_id, :integer
     Driver.reset_column_information
   end
 

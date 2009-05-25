@@ -1,0 +1,18 @@
+<p>
+  <b>Venue:</b>
+  <%=h @classification.venue_id %>
+</p>
+
+<p>
+  <b>Driver:</b>
+  <%=h @classification.driver_id %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @classification.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_classification_path(@classification) %> |
+<%= link_to 'Back', classifications_path %>

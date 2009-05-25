@@ -2,7 +2,7 @@ class VenuesController < ApplicationController
   # GET /venues
   # GET /venues.xml
   def index
-    @venues = Venue.all
+    @venues = Venue.find(:all, :order => "date")
 
     respond_to do |format|
       format.html # index.html.erb

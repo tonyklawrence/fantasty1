@@ -1,0 +1,24 @@
+<h1>Editing classification</h1>
+
+<% form_for(@classification) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :venue_id %><br />
+    <%= f.text_field :venue_id %>
+  </p>
+  <p>
+    <%= f.label :driver_id %><br />
+    <%= f.text_field :driver_id %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.datetime_select :time %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @classification %> |
+<%= link_to 'Back', classifications_path %>

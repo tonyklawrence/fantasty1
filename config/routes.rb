@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :classifications
+
   map.resources :venues
 
   map.resources :drivers

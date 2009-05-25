@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  venue_id: 
+  driver_id: 
+  time: 2009-05-25 15:48:17
+
+two:
+  venue_id: 
+  driver_id: 
+  time: 2009-05-25 15:48:17
