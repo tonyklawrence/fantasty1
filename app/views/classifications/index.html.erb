@@ -9,9 +9,9 @@
 
 <% @classifications.each do |classification| %>
   <tr>
-    <td><%=h classification.venue_id %></td>
-    <td><%=h classification.driver_id %></td>
-    <td><%=h classification.time %></td>
+    <td><%=h classification.venue.name %></td>
+    <td><%=h classification.driver.name %></td>
+    <td><%=h classification.time.to_formatted_s(:time_with_ms) %>.<%=h classification.time_ms %></td>
     <td><%= link_to 'Show', classification %></td>
     <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
     <td><%= link_to 'Destroy', classification, :confirm => 'Are you sure?', :method => :delete %></td>

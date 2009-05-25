@@ -13,6 +13,14 @@
   <%=h @venue.date %>
 </p>
 
+<b>Results:</b>
+<% @venue.classifications.each do |c| %>
+  <p>
+  <%=h c.driver.name %>
+  <%=h c.driver.team.name %>
+  <%=h c.time.to_formatted_s(:time_with_ms) %>.<%=h c.time_ms %>
+  </p>
+<% end %>
 
 <%= link_to 'Edit', edit_venue_path(@venue) %> |
 <%= link_to 'Back', venues_path %>

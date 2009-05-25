@@ -10,7 +10,7 @@
 
 <p>
   <b>Time:</b>
-  <%=h @classification.time %>
+  <%=h @classification.time.to_formatted_s(:time_with_ms) %>.<%=h classification.time_ms %>
 </p>
 
 

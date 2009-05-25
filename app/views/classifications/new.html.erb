@@ -13,7 +13,8 @@
   </p>
   <p>
     <%= f.label :time %><br />
-    <%= f.datetime_select :time %>
+    <%= f.time_select :time, :include_seconds => true %>
+    <%= f.text_field :time_ms %>
   </p>
   <p>
     <%= f.submit 'Create' %>

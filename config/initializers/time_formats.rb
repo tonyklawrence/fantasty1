@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:time_with_ms] = "%I:%M:%S"
